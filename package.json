@@ -1,0 +1,28 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaffity/chaffity.github.io.git"
+  },
+  "author": "Iain Reid <iainreid382@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaffity/chaffity.github.io/issues"
+  },
+  "homepage": "https://github.com/chaffity/chaffity.github.io#readme",
+  "dependencies": {
+    "@chaffity/fui": "0.0.18",
+    "@chaffity/micro": "^1.0.0"
+  },
+  "devDependencies": {
+    "@emphori/eslint-config": "^0.1.4",
+    "@emphori/jest-preset": "0.0.3",
+    "browserify": "^16.5.0",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0"
+  },
+  "private": true
+}
