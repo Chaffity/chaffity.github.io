@@ -16,6 +16,5 @@ deploy:
   skip-cleanup: true
   local-dir: dist
   target_branch: master
-  keep_history: true
   on:
     branch: develop
