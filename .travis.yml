@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - "lts/*"
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN
+  skip-cleanup: true
+  local-dir: dist
+  on:
+    branch: develop
