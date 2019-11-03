@@ -1,0 +1,35 @@
+html, body, main, section, div {
+  all: initial;
+}
+
+body {
+  margin: 35px 28px;
+  display: flex;
+}
+
+main {
+  margin: auto;
+}
+
+div, h1, h2, h3, p, a {
+  text-decoration: none;
+  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", monospace;
+}
+
+h1, h1, h2, h3, h4 {
+  width: max-content;
+  border-style: solid;
+  border-width: 0 0 3px;
+  padding-bottom: 3px;
+}
+
+h1 {
+  margin: 20px auto;
+  border-color: rgb(196, 0, 0);
+}
+
+.repoList {
+  max-width: 568px;
+  display: flex;
+  flex-direction: column;
+}

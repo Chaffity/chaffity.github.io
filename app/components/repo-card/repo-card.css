@@ -1,0 +1,61 @@
+.container {
+  width: initial;
+  display: flex;
+  position: relative;
+  margin: 18px 13px;
+  box-shadow: 0 0 0 0 var(--color) inset;
+  transition: all 145ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 15ms;
+}
+
+.container::before {
+  left: 0.9px;
+  bottom: 100%;
+  border-width: 1px 0px 6px 6px;
+  border-color: transparent transparent var(--color) transparent;
+}
+
+.container::after {
+  top: calc(100% - 6px);
+  right: -5px;
+  border-width: 6px 6px 0 0px;
+  border-color: var(--color) transparent transparent transparent;
+}
+
+.container::before, .container::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: all 145ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 15ms;
+}
+
+.container h4 {
+  border-color: var(--color);
+}
+
+.container .content {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 0 1px var(--color) inset;
+  transition: all 145ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 15ms;
+}
+
+.container:hover {
+  box-shadow: 6px -6px 0 0px var(--color) inset;
+}
+
+.container:hover .content {
+  bottom: 6px;
+  left: 6px;
+}
+
+.container:hover::before, .container:hover::after {
+  transform: scale(1);
+}
